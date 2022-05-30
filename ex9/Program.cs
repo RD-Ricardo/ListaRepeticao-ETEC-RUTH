@@ -12,10 +12,14 @@ namespace ex9
             {
                 Console.Write("Digite o {0} número: ",i);
                 numero = Convert.ToDouble(Console.ReadLine());
-                if(numero > maiorNumero){
+                if(i == 1){
+                    maiorNumero = numero; 
+                    menorValor = numero;  
+                }
+                if(numero > maiorNumero){ 
                     maiorNumero = numero;
                 }
-                else if(numero < maiorNumero){
+                if(numero < menorValor){
                    menorValor = numero; 
                 }
             }

@@ -11,7 +11,12 @@ namespace ex8
             {
                 Console.Write("Digite o {0} número: ",i);
                 numero = Convert.ToDouble(Console.ReadLine());
-                if(numero > maiorNumero){
+                if(i == 1)
+                {
+                    maiorNumero = numero;
+                }
+                if(numero > maiorNumero)
+                {
                     maiorNumero = numero;
                 }
             }

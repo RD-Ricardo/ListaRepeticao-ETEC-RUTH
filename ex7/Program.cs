@@ -6,7 +6,7 @@ namespace ex7
     {
         static void Main(string[] args)
         {
-           Console.Write("Digite um Número: ");
+            Console.Write("Digite um Número: ");
             int numero = Convert.ToInt32(Console.ReadLine());
             int fatorial = 1;
             if (numero < 0)
@@ -15,13 +15,12 @@ namespace ex7
             }
             else if (numero >= 2)
             {
-                for (int i = 2; i <= numero; i++)
+                for (int i = numero; i >= 1; i--)
                 {
                     fatorial = fatorial * i;
+                    Console.WriteLine("{0}! = {1}",i,fatorial);   
                 }
             }
-            Console.WriteLine("{0}! = {1}",numero,fatorial);
-            
         }
     }
 }
