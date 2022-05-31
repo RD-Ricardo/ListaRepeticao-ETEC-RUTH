@@ -8,7 +8,7 @@ namespace ex22
         {
 
             int qtdProduto = 0, contador = 1;
-            double vlCaixa = 0, prProduto, vlTotal = 0,compra=0;
+            double vlCaixa = 0, prProduto, vlTotal = 0,compra=0,totalPrazo, totalAvista;
             while (qtdProduto >= 0)
             {
                 if(contador == 1){
@@ -33,13 +33,13 @@ namespace ex22
             }
             if((vlTotal) > (vlCaixa * 80 / 100))
             {
-                double totalPrazo = (vlTotal + (vlTotal * 10) / 100);
+                totalPrazo = (vlTotal + (vlTotal * 10) / 100);
                 Console.WriteLine("\nForma de Pagamento escolhida: A PRAZO");
                 Console.WriteLine("Total a prazo: {0}", totalPrazo);
             }
             else
             {
-                double totalAvista = (vlTotal - (vlTotal * 5) / 100);
+                totalAvista = (vlTotal - (vlTotal * 5) / 100);
                 Console.WriteLine("\nForma de Pagamento escolhida: A VISTA");
                 Console.WriteLine("Total a vista: {0}", totalAvista);
             }

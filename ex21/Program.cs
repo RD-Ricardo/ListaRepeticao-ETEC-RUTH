@@ -9,7 +9,7 @@ namespace ex21
             double pEtiqueta, totalProduto = 0;
             int cdPagamento;
             string op = "s";
-            while(op == "s")
+            while(op == "s" && op != "n")
             {
                 Console.Write("Digite o preço da Etiqueta: ");
                 pEtiqueta = Convert.ToInt32(Console.ReadLine());
@@ -19,7 +19,7 @@ namespace ex21
             }
             Console.WriteLine("\nValor da Compra {0}", totalProduto);
             Console.Write("Escolha a forma de Pagamento: ");
-            Console.WriteLine("(1) - À vista em dinheiro ou cheque, com 10% de desconto");
+            Console.WriteLine("\n(1) - À vista em dinheiro ou cheque, com 10% de desconto");
             Console.WriteLine("(2) - À vista com cartão de crédito, com 5% de desconto");
             Console.WriteLine("(3) - Em 2 vezes, preço normal de etiqueta sem juros");
             Console.WriteLine("(4) - Em 3 vezes, preço de etiqueta com acréscimo de 10%");
@@ -30,7 +30,7 @@ namespace ex21
                 cdPagamento != 4)
             {
                 Console.WriteLine("Digite um código de pagamento VALIDO:");
-                Console.WriteLine("(1) - À vista em dinheiro ou cheque, com 10% de desconto");
+                Console.WriteLine("\n(1) - À vista em dinheiro ou cheque, com 10% de desconto");
                 Console.WriteLine("(2) - À vista com cartão de crédito, com 5% de desconto");
                 Console.WriteLine("(3) - Em 2 vezes, preço normal de etiqueta sem juros");
                 Console.WriteLine("(4) - Em 3 vezes, preço de etiqueta com acréscimo de 10%");

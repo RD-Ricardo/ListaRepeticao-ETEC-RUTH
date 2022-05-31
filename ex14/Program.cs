@@ -18,7 +18,7 @@ namespace ex14
                     contadorImpar++;
                 }
                 contador++;              
-                Console.Write("Deseja encerrar o programa sim(s) não(n)");
+                Console.Write("Deseja encerrar o programa sim(s) não(n): ");
                 opcao = Console.ReadLine().ToLower();
             }
             Console.WriteLine("");

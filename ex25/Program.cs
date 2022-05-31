@@ -21,7 +21,7 @@ namespace ex25
             me = Convert.ToInt32(Console.ReadLine());
             while (me < 0 || he > 59){
                 Console.Write("Digite o valor do minuto de ENTRADA de 0 a 59: ");
-                he = Convert.ToInt32(Console.ReadLine());
+                me = Convert.ToInt32(Console.ReadLine());
             }
             Console.Write("\nDigite a hora de SAIDA: ");
             hs = Convert.ToInt32(Console.ReadLine());

@@ -20,7 +20,7 @@ namespace ex17
                 Console.WriteLine("\nArea do comodo {0}", area);
                 Console.WriteLine("----------------------------------");
                 Console.Write("Deseja continuar o programa sim(s) não(n): ");
-                opcao = Console.ReadLine();
+                opcao = Console.ReadLine().ToLower();
             }
             Console.WriteLine("\nArea total da casa {0}", areaTotal);
         }

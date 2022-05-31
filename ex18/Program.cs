@@ -7,10 +7,10 @@ namespace ex18
         static void Main(string[] args)
         {
             Console.Write("Digite um número: ");
-            int numeroEntrda = Convert.ToInt32(Console.ReadLine());
+            int numeroEntrada = Convert.ToInt32(Console.ReadLine());
             int i = 1;
             while(i <= 10){
-                Console.WriteLine($"{i} x {numeroEntrda} = {i * numeroEntrda}");
+                Console.WriteLine($"{i} x {numeroEntrada} = {i * numeroEntrada}");
                 i++;
             }
         }

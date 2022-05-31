@@ -17,7 +17,7 @@ namespace ex24
             mn = Convert.ToInt32(Console.ReadLine());
             while(mn < 1 || mn > 12){
                 Console.WriteLine("Digite um valor de 1 até 12: ");
-                ma = Convert.ToInt32(Console.ReadLine());
+                mn = Convert.ToInt32(Console.ReadLine());
             }
             Console.Write("Digite o ano do seu aniversario:");
             an = Convert.ToInt32(Console.ReadLine());

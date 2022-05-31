@@ -11,6 +11,7 @@ namespace ex6
             n = Convert.ToInt32(Console.ReadLine());
             for (int i = 1; i <= n; i++)
             {
+                Console.WriteLine("{0} + {1}",i,somaTotal);
                 somaTotal += i;
             }
             Console.WriteLine("O somatorio é {0}", somaTotal);
